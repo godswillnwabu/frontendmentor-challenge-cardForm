@@ -34,6 +34,10 @@ Users should be able to:
 ### Screenshot
 
 ![](./screenshot.jpg)
+![DesktopView](https://github.com/godswillnwabu/https-github.com-godswillnwabu-frontendmentor-challenge-cardForm/assets/112035653/9f7cac75-d89f-4449-9d46-90223537f6c3)
+![DesktopViewError](https://github.com/godswillnwabu/https-github.com-godswillnwabu-frontendmentor-challenge-cardForm/assets/112035653/1bf7313a-5b51-4029-884c-fd9815e5def5)
+![DesktopViewConfirm](https://github.com/godswillnwabu/https-github.com-godswillnwabu-frontendmentor-challenge-cardForm/assets/112035653/28105187-b555-4783-8988-70fab5ef7fbf)
+![DesktopViewCompleted](https://github.com/godswillnwabu/https-github.com-godswillnwabu-frontendmentor-challenge-cardForm/assets/112035653/43b1a5c5-151e-481c-b354-8de1a3729326)
 
 ### Built with
 
