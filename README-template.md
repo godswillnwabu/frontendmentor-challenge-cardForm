@@ -2,7 +2,7 @@
 
 This is a solution to the [News homepage challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-- Live Site URL: [See the live site URL here](https://godswillnwabu.github.io/frontendmentor-challenge-cardForm/)
+- Live Site URL: [See the live site URL here](https://godswillnwabu.github.io/https-github.com-godswillnwabu-frontendmentor-challenge-cardForm/)
 
 ## Table of contents
 
