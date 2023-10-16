@@ -1,0 +1,207 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url(bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+}
+.card-section {
+    position: relative;
+    height: 100%;
+}
+.card {
+    width: 400px;
+    height: 200px;
+    background-size: cover;
+    border-radius: 5px;
+    position: relative;
+}
+.front {
+    background-image: url('bg-card-front.png');
+    top: 100px;
+    left: 100px;
+    padding: 20px;
+}
+.back {
+    background-image: url('bg-card-back.png');
+    top: 125px;
+    left: 160px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.card-bottom {
+    display: flex;
+    justify-content: space-between;
+    color: hsl(270, 3%, 87%);
+    font-size: 15px;
+}
+#card-number {
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+}
+#card-number span:nth-child(1), #card-number span:nth-child(2),
+#card-number span:nth-child(3),#card-number span:nth-child(4) {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+#card-cvc, #card-number span, #card-date, #card-name {
+    letter-spacing: 2px;
+}
+.back span {
+    font-size: 14px;
+    color: hsl(270, 3%, 87%);
+    position: relative;
+    top: 5px;
+    right: 50px;
+}
+.form-section {
+    width: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(10%, -50%);
+}
+label {
+    font-weight: 500;
+    font-size: 15px;
+}
+.card-details {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid hsl(270, 3%, 87%);
+    margin: 5px 10px 10px 0;
+    width: 100%;
+    outline: none;
+}
+input::placeholder  {
+    font-weight: 500;
+    color: hsl(270, 3%, 87%);
+}
+.confirm-btn {
+    background: hsl(279, 6%, 55%);
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    color: hsl(0, 0%, 100%);
+    border: none;
+    transition: .5s ease;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 15px;
+    width: 100%;
+}
+.confirm-btn:hover {
+    background: hsl(278, 68%, 11%);
+}
+#name-error i, #number-error i, #date-error i, #cvc-error i, #submit-error i {
+    color: hsl(278, 94%, 30%);
+}
+input:focus {
+    border: solid 1px  hsl(249, 99%, 64%);
+}
+.input-error.invalid {
+    border: solid 1px hsl(0, 100%, 66%);
+}
+.form-name, .form-number, .form-date, .form-cvc {
+    position: relative;
+}
+.date {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#name-error, #number-error, #date-error, #cvc-error, #submit-error {
+    color: hsl(0, 100%, 66%);
+    font-size: 10px;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+.complete {
+    width: inherit;
+    text-align: center;
+    display: none;
+}
+.complete p {
+    color: hsl(279, 6%, 55%);
+    font-size: 14px;
+}
+.complete h1 {
+    color: hsl(278, 68%, 11%);
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.continue-btn {
+    background: hsl(278, 68%, 11%);
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: hsl(0, 0%, 100%);
+    border: none;
+    display: block;
+}
+a {
+    text-decoration: none;
+}
+
+/*MEDIA QUERIES */
+@media screen and (max-width: 576px) {
+    body {
+        background: url(bg-main-mobile.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 100% 200px;
+    }
+    .card {
+        width: 300px;
+        height: 150px;
+        position: absolute;
+        box-shadow:2px 9px 10px hsl(278, 68%, 11%);
+    }
+    .front {
+        top: 200px;
+        left: 50%;
+        transform: translate(-60%, -50%);
+        padding: 10px;
+    }
+    .back {
+        top: 100px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    }
+    .card-bottom {
+        font-size: 12px;
+        margin-top: -8px;
+    }
+    #card-number {
+        font-size: 20px;
+    }
+    .form-section {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -5%);
+    }
+    .cardImg img {
+        width: 70px;
+    }
+}
+

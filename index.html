@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <title>Interactive card details form</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.min.css">
+  
+</head>
+<body>
+  <section class="card-section">
+    <div class="front card">
+      <div class="cardImg">
+        <img src="card-logo.svg" class="circle" alt="image">
+      </div>
+      <br>
+      <div class="card-digits">
+        <div id="card-number">
+          <span>0000</span><span>0000</span><span>0000</span><span>0000</span>
+        </div>
+      </div>
+      <br>
+      <div class="card-bottom">
+        <span id="card-name">JANE APPLESSED</span>
+        <span id="card-date">00/00</span>
+      </div>
+    </div>    
+    <div class="back card">
+      <span id="card-cvc">000</span>
+    </div>
+  </section>
+
+  <section class="form-section" id="container">
+    <form id="my-form" action="" method="post" autocomplete="off">
+      
+      <div class="form-name">
+        <label for="fname">CARDHOLDER NAME</label><br>
+        <input class="input-error" id="fname" type="text" placeholder="e.g. Jane Appleseed" onkeyup="validateName()">
+        <span id="name-error"></span>
+      </div>
+
+      <br>
+
+      <div class="form-number">
+        <label for="fnumber">CARD NUMBER</label><br>
+        <input class="input-error" id="fnumber" type="text" maxlength="16" placeholder="e.g. 1234 5678 9123 0000" onkeyup="validateNumber()">
+        <span id="number-error"></span>
+      </div>
+
+      <br>
+
+      <div class="form card-details">
+        <label class="date">EXP. DATE (MM/YY)</label>
+        <div class="form-date">
+          <label for="fmonth"></label><br>
+          <input class="input-error" id="fmonth" type="number" min="1" max="31" placeholder="MM" onkeyup="validateDate()">
+          <span id="date-error"></span>
+        </div>
+
+        <div>
+          <label for="fyear"></label><br>
+          <input class="input-error" id="fyear" type="number" min="23" max="26" placeholder="YY" onkeyup="validateDate()">
+        </div>
+        
+        <div class="form-cvc">
+          <label for="fcvc">CVC</label><br>
+          <input class="input-error" id="fcvc" type="text" min="100" max="999" placeholder="e.g. 123" onkeyup="validateCvc()">
+          <span id="cvc-error"></span>
+        </div>
+      </div>
+
+      <br>
+
+      <input type="submit" value="Confirm" class="confirm-btn" onclick="return validateForm()">
+      <span id="submit-error"></span>
+    </form>
+    
+    <div class="complete" id="complete">
+
+      <div>
+        <img src="icon-complete.svg" alt="">
+      </div>
+
+      <br><br>
+
+      <h1>Thank you!</h1>
+      <br>
+
+      <p>We've added your card details</p>
+      <br>
+      
+      <a href="index.html" class="continue-btn">Continue</a>
+    </div>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+</html>
