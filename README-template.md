@@ -32,8 +32,6 @@ Users should be able to:
 * Getting the Card details and replacing them with the form inputs got me confusing after showing a undefined value; so i went on to study more about HTML DOM which helped me to complete my task.
 
 ### Screenshot
-
-![](./screenshot.jpg)
 ![DesktopView](https://github.com/godswillnwabu/https-github.com-godswillnwabu-frontendmentor-challenge-cardForm/assets/112035653/9f7cac75-d89f-4449-9d46-90223537f6c3)
 ![DesktopViewError](https://github.com/godswillnwabu/https-github.com-godswillnwabu-frontendmentor-challenge-cardForm/assets/112035653/1bf7313a-5b51-4029-884c-fd9815e5def5)
 ![DesktopViewConfirm](https://github.com/godswillnwabu/https-github.com-godswillnwabu-frontendmentor-challenge-cardForm/assets/112035653/28105187-b555-4783-8988-70fab5ef7fbf)
