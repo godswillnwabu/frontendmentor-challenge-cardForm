@@ -65,6 +65,11 @@ function validateDate() {
         dateError.innerHTML = "can't be blank";
         return false;
     }
+    if (month.length !==2 || year.length !==2) {
+        // inputError.classList.add("invalid")
+        dateError.innerHTML = "can't be blank";
+        return false;
+    }
     dateError.innerHTML = "<i class='fa-solid fa-circle-check'></i>";
     // inputError.classList.remove("invalid")
     cardDate.textContent = month + "/" + year;
